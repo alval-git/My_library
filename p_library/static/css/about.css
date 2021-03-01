@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'ExtraLight';
+  font-display: swap;
+  src: url('../fonts/ApexMk3.ttf') ;
+}
+.about-wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.about{
+	font-family: 'ExtraLight';
+	
+}

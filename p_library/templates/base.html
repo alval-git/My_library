@@ -1,0 +1,62 @@
+{% load static %}
+{% load socialaccount %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/base.css'%}">
+	<link rel="stylesheet" href="{% static 'css/index.css'%}">
+
+	<link rel="stylesheet" href="{% static 'css/about.css'%}">
+	<title>Document</title>
+</head>
+<body>
+	<div class='page'>
+		<header>
+			<div class='header-wrapper' >
+				<div class='header'>
+					<a class='navigation' href="http://127.0.0.1:8000/index/">Библиотека</a>
+					<a class='navigation' href="http://127.0.0.1:8000/authors/">Авторы</a>
+					<a class='navigation' href="http://127.0.0.1:8000/publish_house/">Издательства</a>
+					<a class='navigation' href="">О библиотеке</a>
+				</div>
+			</div>
+			<div class='drop-menu-wrapper'>
+				<div class='menu-icon'>
+					<div class='icon'></div>
+					<div class='icon'></div>
+					<div class='icon'></div>
+				</div>
+				<ul class='drop-menu'>
+					<li><a class='drop-item' href="">Библиотека</a></li>
+					<li><a class='drop-item' href="">Авторы</a></li>
+					<li><a class='drop-item' href="">Издательства</a></li>
+					<li><a class='drop-item' href="">О библиотеке</a></li>
+				</ul>
+			</div>	
+		</header>
+		<main>
+			{%block content%}
+			{% endblock %}
+		</main>
+		<footer>
+			<div class="footer-icons">
+				<a href="https://twitter.com/?lang=ru">
+					<img src="{% static 'img/twitter.svg'%}" width="33px";     		height="33px" alt="">
+				</a>
+				<a href="https://ru.linkedin.com/">
+						 <img src="{% static 'img/linkedin.svg'%}" width="33px" 			height="33px" alt="">
+				</a>
+				<a href="">
+					<img src="{% static 'img/google-plus.svg'%}" width="33px"			 height="33px" alt="">
+				</a>
+				<a href="https://www.facebook.com/">
+					<img src="{% static 'img/facebook.svg'%}" width="33px"					 height="33px" alt="">
+				</a>
+			</div>
+		</footer>
+	</div>
+	<script src="{% static 'js/base.js'%}"></script>
+</body>
+</html>

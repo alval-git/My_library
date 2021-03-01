@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class='publish-houses-wrapper'>
+        <ul>
+            {% for book in books %}
+                <li>Произведение "{{book.title}}"- издательство "{{book.publish_house}}"</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
